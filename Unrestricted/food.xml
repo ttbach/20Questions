@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<expr type="binary">
+	<question value="Is it a dessert?"/>
+ 	<!-- Yes, dessert -->
+ 	<expr type="binary">
+ 		<question value="Does it usually come in large servings?"/>
+ 		<!-- Yes, large servings -->
+		<expr type="binary">
+ 			<question value="Does making it involve assembling?"/>
+ 			<!-- Yes, assembling -->
+			<expr type="binary">
+				<question value="Is it served in weddings?"/>
+				<!-- Yes, weddings -->
+				<expr type="answer">
+					<answer value="Wedding Cake"/>
+				</expr>
+				<!-- No, not weddings -->
+				<expr type="answer">
+					<answer value="Macaron Tower"/>
+				</expr>
+			</expr>
+			<!-- No, not assembled -->
+			<expr type="binary">
+				<question value="Is it festive?"/>
+				<!-- Yes, festive -->
+				<expr type="answer">
+					<answer value="Buche de Noel"/>
+				</expr>
+				<!-- No, not festive -->
+				<expr type="answer">
+					<answer value="Lemon Meringue Pie"/>
+				</expr>
+			</expr>
+		</expr>
+		<!-- No, small servings -->
+		<expr type ="binary">
+			<question value="Is it frozen?"/>
+			<!-- Yes, frozen -->
+			<expr type="binary">
+				<question value="Does it contain dairy?"/>
+				<!-- Yes, dairy -->
+				<expr type="answer">
+					<answer value="Ice Cream"/>
+				</expr>
+				<!-- No, non-dairy -->
+				<expr type="answer">
+					<answer value="Sorbet"/>
+				</expr>
+			</expr>
+			<!-- No, not frozen -->
+			<expr type="binary">
+				<question value="Is it a choux pastry?"/>
+				<!-- Yes, choux -->
+				<expr type="answer">
+					<answer value="Religieuse"/>
+				</expr>
+				<!-- No, not choux -->
+				<expr type="answer">
+					<answer value="Cronut"/>
+				</expr>
+			</expr>
+		</expr>
+ 	</expr>
+ 	<!-- No, not dessert -->
+ 	<expr type="binary">
+ 		<question value="Is it American?"/>
+ 		<!-- Yes, American -->
+ 		<expr type="binary">
+ 			<question value="Is it a soup?"/>
+ 			<!-- Yes, soup -->
+ 			<expr type="binary">
+ 				<question value="Does it contain seafood?"/>
+ 				<!-- Yes, seafood -->
+ 				<expr type="answer">
+ 					<answer value="Clam Chowder"/>
+ 				</expr>
+ 				<!-- No, no seafood -->
+ 				<expr type="answer">
+ 					<answer value="Gumbo"/>
+ 				</expr>
+ 			</expr>
+ 			<!-- No, not soup -->
+ 			<expr type="binary">
+ 				<question value="Does it contain bread?"/>
+ 				<!-- Yes, bread -->
+ 				<expr type="answer">
+ 					<answer value="Hamburger"/>
+ 				</expr>
+ 				<!-- No, no bread -->
+ 				<expr type="answer">
+ 					<answer value="Corn Dog"/>
+ 				</expr>
+ 			</expr>
+ 		</expr>
+ 		<!-- No, not American -->
+ 		<expr type="binary">
+ 			<question value="Is it Vietnamese?"/>
+ 			<!-- Yes, Vietnamese -->
+ 			<expr type="binary">
+ 				<question value="Does it contain a broth?"/>
+ 				<!-- Yes, broth -->
+ 				<expr type="answer">
+ 					<answer value="Pho"/>
+ 				</expr>
+ 				<!-- No, no broth -->
+ 				<expr type="answer">
+ 					<answer value="Spring Rolls"/>
+ 				</expr>
+ 			</expr>
+ 			<!-- No, not Vietnamese --> 
+ 			<expr type="binary">
+ 				<question value="Is the cooking process humane?"/>
+ 				<!-- Yes, very humane -->
+ 				<expr type="answer">
+ 					<answer value="Pasta"/>
+ 				</expr>
+ 				<!-- No, not humane -->
+ 				<expr type="answer">
+ 					<answer value="Foie Gras"/>
+ 				</expr>
+			</expr>
+		</expr>
+	</expr>
+</expr>
