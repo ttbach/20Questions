@@ -10,4 +10,5 @@ The restricted version has pre-specified choices, while the unrestricted version
 How to run the program:
 1. Download the program to desktop
 2. Via the terminal or Eclipse, run either the the restricted version or unrestricted
-3. Play a fun game
+3. For the restricted version, run Restricted/src/TwentyQuestions/TwentyQuestionsApplication.java
+4. For the unrestricted version, run Unrestricted/src/TwentyQuestions/TwentyQuestionsApplication.java
