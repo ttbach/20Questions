@@ -8,6 +8,7 @@ There are two variations to this game: The choice of food is pre-specified, or t
 The restricted version has pre-specified choices, while the unrestricted version has unrestricted choices.
 
 How to run the program:
+
 1. Download the program to desktop
 2. Via the terminal or Eclipse, run either the the restricted version or unrestricted
 3. For the restricted version, run Restricted/src/TwentyQuestions/TwentyQuestionsApplication.java
